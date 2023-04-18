@@ -1839,7 +1839,7 @@ margin: 0 12px 0 0;
   display: none;
 }
 .publication-table{
-margin: 60px 0 70px 0;
+margin: 60px 0 10px 0;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
@@ -1849,9 +1849,17 @@ gap: 2.5%;
   position: relative;
   background-color: #FAFAFA;
   width: 31.5%;
-  padding: 30px 30px 50px 30px;
+  padding: 25px 25px 45px 25px;
   border-radius: 4px;
   margin: 0px 0 120px 0;
+  border: 5px solid #FAFAFA;
+  transition: .3s;
+}
+.publication-main:hover{
+  border: 5px solid #006299;
+}
+.publication-main:hover .publication-title{
+  color: #006299;
 }
 .publication-main a{
   text-decoration: none;
@@ -1865,14 +1873,16 @@ gap: 2.5%;
 }
 .publication-title{
   font-size: 22px;
+  text-transform: uppercase;
   font-weight: 600;
   line-height: 1.7;
   height: 120px;
   overflow: hidden;
   margin: 0 0 20px 0;
+  transition: .3s;
 }
 .publication-img{
-  width:300px;
+  width:72%;
   height: 450px;
   overflow: hidden;
 }
