@@ -56,14 +56,21 @@ else
 
 })
 
-$("#burgerarrov").click(function(){
+/* $("#burgerarrov").click(function(){
   $(".burger-nav_submenu").toggleClass("display-block");
-});
+}); */
 
 
 $(".burger").click(function(){
   $(".burger-menu").toggleClass("burger-open"),
-  $(".burger-div").toggleClass("burger-width")
+  $(".burger-div").toggleClass("burger-width"),
+  $(".burger-icon1").toggleClass("burger-x"),
+  $(".burger-icon2").toggleClass("burger-x"),
+  $(".burger-icon3").toggleClass("burger-x")
+})
+
+$(".burgerarrov").click(function(){
+  $(this).parent().toggleClass("burgeropen")
 })
 
 

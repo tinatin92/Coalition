@@ -32,7 +32,7 @@
   }
   .main-update_info-title span:first-of-type {
     font-size: 24px;
-    top: -41px;
+    top: -46px;
   }
   .main-update_div-title {
     font-size: 20px;
@@ -45,7 +45,7 @@
   }
   .useful-info_table-title {
     font-size: 24px;
-    top: -42px;
+    top: -47px;
   }
   .useful-info_div-img {
     height: 257px;
@@ -132,7 +132,7 @@
   }
   .update-tables_table a{
     font-size: 20px;
-    
+    line-height: 30px;
   }
   .update-table_info1{
     height: 92px;
@@ -162,7 +162,7 @@
     font-size: 22px;
   }
   .disinfo-table_table-title{
-    padding: 30px 0 30px 0;
+    padding: 20px 0 30px 0;
   }
   .disinfo-table_table-img{
     height: 237px;
@@ -174,7 +174,7 @@
     margin: 0 0 30px 0;
   }
   .disinfo-table_table-title{
-    height: 119px;
+    height: 108px;
   }
   .disinfo-table_description{
     padding: 0 0 0 0;
@@ -190,12 +190,12 @@
   .publication-table{
     margin: 40px 0 10px 0;
   }
-  .publication-main{
-    margin: 0px 0 100px 0;
+  .publication-border{
+    padding: 0 0 50px 0;
+    margin: 0 0 50px 0;
   }
-  .publication-main::after{
-    bottom: -50px;
-  }
+  
+
   .compaigns-table{
     padding: 40px 0 30px 0;
   }
@@ -207,6 +207,9 @@
   }
   .campaign-img{
     height: 194px;
+  }
+  .main-update_div-title div:first-of-type {
+    height: 90px;
   }
 }
 
@@ -243,11 +246,11 @@
   }
   .main-update_info-title span:first-of-type {
     font-size: 20px;
-    top: -35px;
+    top: -39px;
   }
   .useful-info_table-title {
     font-size: 20px;
-    top: -36px;
+    top: -41px;
   }
   .main-update_div-img {
     height: 190px;
@@ -255,9 +258,7 @@
   .main-update_div-title {
     font-size: 18px;
   }
-  .main-update_div-title div:first-of-type {
-    height: 93px;
-  }
+  
   .main-update_div-title {
     padding: 20px 0px 20px 0;
   }
@@ -330,6 +331,9 @@
     
     height: 346px;
   }
+  .footer4 {
+    padding: 0px 0 0 20px;
+  }
 }
 
 /*----------------------------- 1200px-----------------------------------*/
@@ -348,8 +352,9 @@
     width: 16px;
     height: 16px;
   }
-  .main-slider .slick-dots li{
-    margin: 0 0 12px 0;
+  .main-slider .slick-dots li {
+    list-style: none;
+    margin: 0 0 6px 0 !important;
   }
   
   .burger-div.burger-width{
@@ -411,7 +416,7 @@ width: 100%;
   }
   .main-update_info-title span:first-of-type {
     font-size: 18px;
-    top: -32px;
+    top: -36px;
   }
   .main-update_info-title span:last-of-type a {
     font-size: 14px;
@@ -426,7 +431,8 @@ width: 100%;
     font-weight: 600;
   }
   .main-update_div-title div:first-of-type {
-    height: 72px;
+    height: 60px;
+    line-height: 22px;
   }
   .main-update_div-date span:first-of-type {
     font-size: 20px;
@@ -443,7 +449,7 @@ width: 100%;
   }
   .useful-info_table-title {
     font-size: 18px;
-    top: -3px;
+    top: -7px;
   }
   .useful-info_div {
     width: 48%;
@@ -494,7 +500,7 @@ width: 100%;
   }
   .eudisinfo-div1-title span:first-of-type{
     font-size: 14px;
-    padding: 0 60px 29px 0;
+    padding: 0 24px 29px 0;
   }
   .eudisinfo-div1-title span:last-of-type{
     font-size: 16px;
@@ -518,6 +524,13 @@ width: 100%;
   }
   .eudisinfo-div1{
     width: 50%;
+  }
+  .eudisinfo-div2{
+    width: 46%;
+  }
+  .disclaimer-title a{
+    font-size: 18px;
+    margin: 0 0 20px 0;
   }
   .eudisinfo-div2:nth-last-of-type(2){
     width: 50%;
@@ -648,6 +661,7 @@ justify-content: center;
 
 .update-tables_table a {
   font-size: 14px;
+  line-height: 22px;
 }
 .update-table_info1 {
   height: 65px;
@@ -686,14 +700,12 @@ justify-content: center;
 }
 .disinfo-table_table-title {
   padding: 20px 0 20px 0;
-}
-.disinfo-table_table-title {
-  font-size: 16px;
-}
-.disinfo-table_table-title {
   height: 84px;
   letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 22px;
 }
+
 .disinfo-table_table-img{
   margin: 20px 0 0 0;
 }
@@ -705,8 +717,9 @@ justify-content: center;
 }
 .publication-title{
   font-size: 14px;
-  height: 75px;
+  height: 66px;
   margin: 0 0 20px 0;
+  line-height: 22px;
 }
 .publication-img {
   height: 234px;
@@ -742,6 +755,13 @@ justify-content: center;
   padding: 0 0 30px 0;
   margin: 0 0 30px 0;
 }
+.footer4 {
+  padding: 0px 0 0 0px;
+}
+.publication-border{
+  padding: 0 0 40px 0;
+  margin: 0 0 40px 0;
+}
 }
 
 /*------------------------------- 992px ---------------------------------*/
@@ -773,10 +793,10 @@ justify-content: center;
   }
   .useful-info_table-title {
     font-size: 18px;
-    top: -33px;
+    top: -37px;
 }
   .main-slider__text .container div{
-    height: 147px;
+    height: 127px;
     margin: 0 0 28px 0;
    padding: 36px 0 0 0;
    width: 65%;
@@ -1041,7 +1061,7 @@ flex-direction: column;
   width: 100%;
 }
 .disinfo-table_table-img {
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
 }
 .disinfo-table_table-img {
   height: 188px;
@@ -1058,17 +1078,19 @@ flex-direction: column;
 .publication-title{
   font-size: 16px;
 }
-.publication-main{
+.publication-border{
   width: 100%;
+  padding: 0 32px 40px 32px;
+}
+.publication-main{
+
   padding: 20px 20px 30px 20px;
 }
 .publication-img{
-  width: 90%;
+  width: 64%;
   height: 274px;
 }
-.publication-main {
-  margin: 0px 0 80px 0;
-}
+
 .publication-main::after {
   bottom: -40px;
 }
@@ -1088,6 +1110,18 @@ flex-direction: column;
 }
 .campaign-img {
   height: 150px;
+}
+.main-update_info-title span:last-of-type a{
+  font-size:16px ;
+}
+.main-update_div-date span:first-of-type{
+  font-size: 24px;
+}
+.main-update_div-date span:last-of-type {
+  font-size: 16px;
+}
+.main-update_info-title2 a {
+  font-size: 16px;
 }
 }
 /*--------------------------------- 576px -------------------------------*/
