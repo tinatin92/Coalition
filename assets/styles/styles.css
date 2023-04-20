@@ -730,19 +730,23 @@ padding: 0 0  0 50px;
 }
 .about-us_main{
   display: flex;
-  margin: 100px 0 0 0;
+  flex-wrap: wrap;
+  margin: 40px 0 0 0;
   gap: 3%;
 }
 .about-us{
   position: relative;
   width: 66%;
   padding: 0  40px 0 0;
-  border-top: 3px solid #E4EBEF;
+  
+}
+.about-us_title-div{
+  border-bottom: 3px solid #E4EBEF;
 }
 .about-us .about-us_title{
-  position: absolute;
   display: inline-block;
   padding: 0 30px 0 0;
+  margin: 0 0 -3px 0;
   font-size: 24px;
   font-weight: 700;
   top: -39px;
@@ -755,22 +759,52 @@ padding: 0 0  0 50px;
 .about-us_text{
   padding: 40px 0px 0 0;
 }
-
+.updates-heandler{
+  position: absolute;
+  width: 48px;
+  height: 88px;
+  background-color: #F1F1F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0 0 4px;
+  left: -48px;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.updates-heandler .icon-Vector-21{
+  color: #DA6903;
+  font-size: 18px;
+  transition: .3s;
+}
+.updates-heandler .icon-Vector-21.rotate{
+  transform: rotate(180deg);
+}
+.burger-nav_cont.rotate .burgerarrov{
+  transform: rotate(180deg);
+}
 .latest-updates_main{
-  border-top: 3px solid #E4EBEF;
   position: relative;
   padding: 40px 0 0 0;
 }
-.latest-updates_main .latest-updates_titel{
-  position: absolute;
+
+.latest-updates_titel-div {
+  border-bottom: 3px solid #E4EBEF;
+}
+.latest-updates_titel-div .latest-updates_titel{
   display: inline-block;
-  padding: 0 30px 6px 0;
+  padding: 0 30px 0px 0;
+  margin: 0 0 -3px 0;
   border-bottom: 3px solid #138F8E;
   top: -45px;
   font-size:24px;
   font-weight: 700;
   color: #138F8E;
 
+}
+.latest-publications_title-div{
+  border-bottom: 3px solid #E4EBEF;
+  margin: 0 0 40px 0;
 }
 .latest-updates_text{
   max-height: 104px;
@@ -789,6 +823,7 @@ padding: 0 0  0 50px;
 .latest-updates_info a{
   display: flex;
   text-transform: uppercase;
+  line-height: 34px;
   font-size: 22px;
   font-weight: 600;
   text-decoration: none;
@@ -823,19 +858,16 @@ padding: 0 0  0 50px;
 .latest-publications_main{
   position:relative;
   margin: 89px 0 0 0;
-  border-top:3px solid #E4EBEF;
-  padding: 40px 0 0 0;
 }
 .latest-publications_title{
-  position: absolute;
+
   display: inline-block;
   font-size: 24px;
   font-weight: 700;
   color: #004364;
   padding: 0 30px 10px 0;
   border-bottom: 3px solid #004364;
-  left: 0;
-  top: -49px;
+ margin: 0 0 -3px 0;
 }
 .partner{
   width: 100%;
@@ -1052,17 +1084,16 @@ object-fit: cover;
 }
 .update-detail{
   display: flex;
-  gap: 4%;
+  gap: 3%;
 }
 .update-detail-info{
-  width: 66%;
+  width: 67%;
 }
 .update-detail_text{
   padding: 20px 0 50px 0;
 }
-.update-latest-updates{
-  width: 30%;
-}
+
+
 .update-detail_banner{
   width: 100%;
   height: 214px;
@@ -1074,17 +1105,18 @@ object-fit: cover;
   object-fit: cover;
 }
 .update-detail_info{
-  padding: 50px 0 0px 0;
+  padding: 40px 0 0px 0;
 }
 .update-detail_info h2{
   font-size: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 .update-detail_info span{
   color: #004364;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .update-detail_gallery{
@@ -1107,16 +1139,23 @@ object-fit: cover;
 }
 .update-latest-updates{
   width: 30%;
-  padding: 40px 0 0 0;
+  padding: 0px 0 0 0;
+}
+.update-registration_date div{
+  position: relative;
+}
+
+.update-registration-img .update-registration_date1{
+  display: none;
 }
 .update-registration{
   width: 100%;
-  height: 140px;
   border-radius: 4px;
   background-color: #006299;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 0 56px 0 48px;
+  padding: 28px 190px 28px 48px;
   margin: 0 0 30px 0;
 }
 
@@ -1139,10 +1178,10 @@ object-fit: cover;
 }
 .update-registration_date div span{
   position: relative;
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   font-weight: 500;
-  margin: 0 40px 0 0;
+  margin: 0 46px 0 0;
 }
 .update-registration_date div span:last-of-type::after{
   position: absolute;
@@ -1150,12 +1189,12 @@ object-fit: cover;
   width: 29px;
   height: 2px;
   background-color: #fff;
-  left: -36px;
+  left: -39px;
   bottom: 10px;
 }
+
 .update-registration_button button{
-width: 139px;
-height: 50px;
+cursor: pointer;
 background-color: #fff;
 color: #006299;
 display: flex;
@@ -1165,6 +1204,7 @@ border-radius: 4px;
 border: none;
 font-size: 20px;
 font-weight: 500;
+padding: 11px 37px;
 }
 .disinfo-table{
   position: relative;
@@ -1743,12 +1783,12 @@ border-radius: 6px 6px 0 0;
 }
 /*****burger*********/
 .burger-menu{
-  display: none;
+  transform: scalex(0);
+  transform-origin: right;
   position: absolute;
   top: 154px;
-  right: -100%;
   z-index: 1000000;
-
+ transition: 6s;
 }
 .burger-div{
   width: 0px;
@@ -1999,4 +2039,105 @@ transition: .3s;
 .campaign-main:hover .campaign-img img{
   transform: scale(1.1);
 }
-
+.eudisinfo-banner{
+  height: 234px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.update-detail_gallery.eudisinfo-gallery{
+  padding: 0 0 50px 0;
+}
+.eudisinfo-gallery a{
+  height: 277px;
+}
+.eudisinfo-posts .latest-updates_titel{
+  color: #DA6903;
+  font-size: 26px;
+  border-bottom: 3px solid #DA6903;
+}
+.publication-cont{
+  display: flex;
+  gap: 4%;
+}
+.publications-detail{
+  margin: 50px 0 0 0;
+  width: 66%;
+}
+.publication-div1{
+  display: flex;
+  
+}
+.publication-detail-img{
+  width: 217px;
+  height: 306px;
+  overflow: hidden;
+  margin: 0 44px 0 0;
+}
+.publication-detail-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.publication-info-title{
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 100px 0 0;
+  margin: 0 0 30px 0;
+}
+.publication-info{
+  flex: 1;
+}
+.publication-info-date{
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+.publication-info-date span{
+  color: #006299;
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+.publication-info-button button{
+  padding: 14px 30px 14px 16px;
+  background-color: #006299;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+}
+.publication-info-button button span{
+  margin: 0 23px 0 0;
+}
+.publication-info-date span:first-of-type{
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  margin: 0 60px 0 0;
+}
+.publication-info-date span:first-of-type::after{
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 1.5px;
+  background-color: #E4EBEF;
+  top: 50%;
+  right: -42px;
+}
+.publication-detail_latest-publications_main{
+  width: 30%;
+}
+.publication-detail_latest-publications_main .latest-publications_main{
+  margin: 50px 0 0 0;
+}
+.publication-div2{
+  margin: 40px 0 60px 0
+}
+.publication-info-title.title-res{
+  display: none;
+}

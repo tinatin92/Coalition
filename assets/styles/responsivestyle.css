@@ -211,6 +211,46 @@
   .main-update_div-title div:first-of-type {
     height: 90px;
   }
+  .latest-updates_info a{
+    font-size: 20px;
+  }
+  .update-detail_banner{
+    height: 197px;
+  }
+  .update-detail_info h2{
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  .update-detail_info span{
+    font-size: 18px;
+  }
+  .update-detail_info{
+    padding: 20px 0 0 0;
+  }
+  .update-detail_text {
+    padding: 10px 0 50px 0;
+}
+.update-registration_date div span{
+  font-size: 20px;
+}
+.update-registration{
+  padding: 28px 56px 28px 48px;
+}
+.update-detail_gallery a{
+  height: 234px;
+}
+.publication-info-title{
+  font-size: 24px;
+}
+.publication-info-date span, .publication-info-date span:first-of-type{
+  font-size: 24px;
+}
+.publication-info-title{
+  margin: 0 0 30px 0;
+}
+.publication-info-date{
+  margin: 0 0 20px 0;
+}
 }
 
 /*----------------------------- 1400px-----------------------------------*/
@@ -343,7 +383,8 @@
     font-size: 16px;
   }
   .burger-menu.burger-open{
-    display: block;
+    transform: scale(1);
+    transform-origin: right;
   }
   .burger-open{
     right: 25px;
@@ -762,6 +803,123 @@ justify-content: center;
   padding: 0 0 40px 0;
   margin: 0 0 40px 0;
 }
+.about-us_main{
+  margin: 13px 0 0 0;
+}
+.about-us .about-us_title{
+  font-size: 16px;
+}
+.latest-updates_titel-div .latest-updates_titel{
+  font-size: 16px;
+}
+.about-us_text{
+  padding: 30px 0 0 0;
+}
+.latest-updates_main{
+  padding: 30px 0 0 0;
+}
+.latest-updates_info a {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 16px 0;
+}
+.latest-updates_text {
+  max-height: 55px;
+  padding: 0 33px 0 0;
+}
+.latest-updates{
+  padding: 10px 10px;
+}
+.latest-publications_title{
+  font-size: 16px;
+}
+.latest-publications_title-div{
+  margin: 0 0 30px 0;
+}
+.partner-div{
+  padding: 8px 30px;
+}
+.partner-div a{
+  width: 72px;
+  height: 72px;
+}
+.partner{
+  margin: 50px 0;
+}
+.about-gallery{
+  padding: 40px 0 50px 0;
+}
+.share-share{
+  font-size: 18px;
+}
+.update-detail_info h2{
+  font-size: 16px;
+}
+.update-detail_info {
+  padding: 20px 0 0px 0;
+}
+.update-detail_info span {
+  font-size: 16px;
+}
+.update-detail_text {
+  padding: 10px 0 30px 0;
+}
+.update-registration div:first-of-type img{
+  width: 43px;
+  height: 43px;
+}
+.update-registration{
+  padding: 20px 28px;
+  margin: 0 0 10px 0;
+}
+.update-registration_button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.update-registration_date .update-registration_date1{
+  font-size: 20px;
+}
+.update-registration_date div span {
+  font-size: 18px;
+}
+
+.update-registration_date{
+  padding: 0 0 10px 15px;
+}
+.update-registration_button button{
+  font-size: 16px;
+}
+.update-detail_gallery a {
+  height: 127px;
+}
+.update-detail_gallery{
+  padding: 20px 0 40px 0;
+}
+.eudisinfo-banner{
+  height: 113px;
+}
+.eudisinfo-posts .latest-updates_titel {
+  font-size: 18px;
+ 
+}
+.publication-detail-img{
+  width: 165px;
+  height: 228px;
+  margin: 0 22px 0 0;
+}
+.publication-info-title {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0px 20px 0 0;
+  margin: 0 0 20px 0;
+}
+.publication-info-date span, .publication-info-date span:first-of-type {
+  font-size: 16px;
+}
+.publications-detail, .publication-detail_latest-publications_main .latest-publications_main{
+  margin: 30px 0 0 0;
+}
 }
 
 /*------------------------------- 992px ---------------------------------*/
@@ -1123,6 +1281,154 @@ flex-direction: column;
 .main-update_info-title2 a {
   font-size: 16px;
 }
+.about-us{
+  width: 100%;
+}
+.about-us .about-us_title {
+  font-size: 18px;
+}
+.about-us_text {
+  padding: 40px 50px 0 0;
+}
+.partner-div{
+  width: 33%;
+}
+.partner-div {
+  padding: 9px 20px;
+}
+.partner {
+  margin: 40px 0;
+}
+.about-gallery{
+  border: none;
+  overflow-y: scroll;
+}
+.about-gallery {
+  padding: 0px 0 50px 0;
+}
+.about-gallery a{
+  width: 100%;
+  flex:0 0 auto;
+}
+.about-us{
+  padding: 0 0 0 0;
+}
+.update-detail-info {
+  width: 100%;
+}
+.updates{
+  width: 335px;
+  position: fixed;
+  top: 380px;
+  right:-335px;
+  transition: .3s;
+}
+.left-100{
+  right:0px;
+}
+
+.eudisinfo-updates.left-100{
+  right:0px;
+}
+.eudisinfo-updates .update-latest-updates{
+  display: block;
+}
+.update-latest-updates{
+position: fixed;
+width:335px;
+right: -335px;
+transition: .3s;
+}
+.update-latest-updates.left-100{
+  right:0px;
+}
+.update-detail_gallery{
+  overflow-y: scroll;
+}
+.update-detail_gallery a{
+  width: 100%;
+  flex: 0 0 auto;
+  height: 145px;
+
+}
+.update-registration{
+  flex-direction: column;
+}
+.update-registration_date div{
+  width: 100%;
+  margin: 0 0 14px 0;
+}
+.update-registration-img{
+display: flex;
+justify-content: flex-start;
+}
+.update-registration_date {
+  padding: 0 0 0px 0px;
+}
+.update-registration_date1{
+  display: none;
+}
+.update-registration-img{
+  display: flex;
+  align-items: center;
+  margin: 0 0 14px 0;
+}
+.update-registration-img .update-registration_date1{
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 0 24px;
+}
+.update-registration_date div span:last-of-type{
+  margin: 0 0 0 0;
+}
+.update-registration_date div span {
+  font-size: 16px;
+}
+.eudisinfo-banner {
+  height: 76px;
+}
+.publication-detail_latest-publications_main{
+position: fixed;
+width: 335px;
+right: -335px;
+top: 300px;
+transition: .3s;
+}
+.publication-detail_latest-publications_main.left-100{
+  right: 0;
+}
+.publications-detail{
+  width: 100%;
+}
+.publication-div1{
+  flex-direction: column;
+}
+.publication-detail-img{
+width: 206px;
+height: 292px;
+margin: 40px auto;
+outline: 32px solid #FAFAFA;
+}
+.publication-info-title.title-res{
+  display: block;
+}
+.publication-info-title{
+  display: none;
+}
+.publication-info{
+  margin: 20px 0 0px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.publication-div2{
+  margin: 34px 0 20px 0;
+  padding: 0 40px 0 0;
+}
+
 }
 /*--------------------------------- 576px -------------------------------*/
 

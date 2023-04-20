@@ -70,7 +70,15 @@ $(".burger").click(function(){
 })
 
 $(".burgerarrov").click(function(){
-  $(this).parent().toggleClass("burgeropen")
+  $(this).parent().toggleClass("burgeropen"),
+  $(this).parent().toggleClass("rotate")
+})
+
+$(".updates-heandler").click(function(){
+  $(".updates").toggleClass("left-100"),
+  $(".icon-Vector-21").toggleClass("rotate"),
+  $(".update-latest-updates").toggleClass("left-100"),
+  $(".publication-detail_latest-publications_main").toggleClass("left-100")
 })
 
 
