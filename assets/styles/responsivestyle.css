@@ -301,6 +301,7 @@ padding: 106px 84px;
   width: 116px;
   height: 116px;
 }
+
 .registration-form h3{
   font-size: 24px;
 }
@@ -433,6 +434,8 @@ padding: 106px 84px;
     }
     .registration-form{
       padding: 30px 50px;
+      width: 586px;
+      height: 640px;
     }
     .registration-form h3 {
       font-size: 22px;
@@ -1473,6 +1476,9 @@ flex-direction: column;
 .update-detail-info {
   width: 100%;
 }
+.updates-heandler{
+  visibility: visible;
+}
 .updates{
   width: 335px;
   position: fixed;
@@ -1494,7 +1500,19 @@ flex-direction: column;
 position: fixed;
 width:335px;
 right: -335px;
+top: 178px;
 transition: .3s;
+}
+.latest-updates, .latest-updates_main, .latest-updates_titel-div{
+background-color: #F1F1F1;
+}
+.latest-updates_titel-div{
+  padding: 10px 0 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.latest-updates_titel-div .latest-updates_titel{
+  padding: 0 30px 0px 12px;
+
 }
 .update-latest-updates.left-100{
   right:0px;
@@ -1684,9 +1702,11 @@ margin: 0 0 20px 0;
   justify-content: center;
   
 }
-.reg-x{
-  padding: 5px;
-  transform: translate(30px, -20px);
+
+.registration-form {
+  padding: 26px 40px;
+  width: 80%;
+  height: initial;
 }
 }
 /*--------------------------------- 576px -------------------------------*/
