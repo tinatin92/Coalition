@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
   let slide = $(".campaingn-detail_slide");
 
@@ -59,7 +61,7 @@ $(document).ready(function () {
 
   Fancybox.bind("[data-fancybox]", {});
 
-  $(document).ready(function () {
+/*   $(document).ready(function () {
     if ($(window).width() < 1620)
       $("#IFRAMEID").attr(
         "src",
@@ -70,7 +72,7 @@ $(document).ready(function () {
         "src",
         "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=500&height=1000&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
       );
-  });
+  }); */
 
   /* $("#burgerarrov").click(function(){
   $(".burger-nav_submenu").toggleClass("display-block");
@@ -110,13 +112,50 @@ $(document).ready(function () {
     $(".registration").removeClass("scale-1");
   });
 
-  let hasScrolled = false;
-  $(window).scroll(function() {
-    if (!hasScrolled) {
-      $('header').addClass('header-shadow');
-      hasScrolled = true;
+
+
+  $(window).scroll(function(){
+
+    if ($(this).scrollTop() > 1) {
+       $('header').addClass('header-shadow');
+    } else {
+       $('header').removeClass('header-shadow');
+    };
+
+
+    const $element = $('header');
+
+    if ($(window).scrollTop() === 0) {
+   
+      $element.removeClass('header-shadow');
     }
   });
 
+/* 
+  let mandatoryInput = $(".mandatory-input input")
 
-});
+ 
+
+    mandatoryInput.on('input', function() {
+      let inputValue = $(this).val();
+      let hasNumber = /\d/.test(inputValue);
+      let hasUpperCase = /[A-Z]/.test(inputValue);
+      
+      if (!hasNumber && !hasUpperCase) {
+        $(this).parent().addClass("mandatoryspan")
+        console.log('Input contains a number and an uppercase letter.');
+      }else{
+        $(this).parent().removeClass("mandatoryspan")
+      }
+  
+
+}); */
+ 
+
+
+ 
+  });
+
+
+
+
